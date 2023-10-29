@@ -1,0 +1,10 @@
+﻿################################################################################
+# Este arquivo .gitignore foi criado automaticamente pelo Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs
+/ApplicationLabSolution/.vs
+/ApplicationLabSolution/src/Application/bin
+/ApplicationLabSolution/src/Application/obj
+/ApplicationLabSolution/src/WebApi/bin
+/ApplicationLabSolution/src/WebApi/obj
