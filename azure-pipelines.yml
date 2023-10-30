@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  demands: local
+  name: local
 
 variables:
   solution: '**/*.sln'
