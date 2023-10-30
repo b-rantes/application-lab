@@ -1,12 +1,14 @@
-﻿namespace Application.UseCases
+﻿using Microsoft.Extensions.Configuration;
+
+namespace Application.UseCases
 {
     public class StringManagerService : IStringManagerService
     {
         private string _string;
 
-        public StringManagerService()
+        public StringManagerService(IConfiguration configuration)
         {
-            _string = "HelloWorld";
+            _string = configuration.GetSection("StringManagerService:Value").Value ?? "Empty value";
         }
 
         public string GetString()
